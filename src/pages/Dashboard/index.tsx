@@ -5,7 +5,7 @@ import api from '../../services/api'
 
 import logoImg from '../../assets/logo.svg'
 
-import { Title, Form, Repositories, Error } from './styles'
+import { Title, Text, Form, Repositories, Error } from './styles'
 
 interface Repository {
   full_name: string
@@ -70,8 +70,8 @@ const Dashboard: React.FC = () => {
         />
         <button type="submit" >Pesquisar</button>
       </Form>
-
       {inputError && <Error> {inputError} </Error>}
+      <Text>Ex.: Facebook/react.</Text>
 
       <Repositories>
         {repositories.map(repository => (

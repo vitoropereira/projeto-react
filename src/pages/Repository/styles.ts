@@ -78,7 +78,7 @@ export const RepositoryInfo = styled.section`
 `
 
 export const Issues = styled.div`
-  margin-top: 80px;
+  margin-top: 30px;
 
   a{
     background: #fff;
@@ -123,4 +123,11 @@ export const Issues = styled.div`
   }
 
 `
-
+export const Text = styled.p`
+    max-width: 450px;
+    margin-left: 10px;
+    line-height: 16px;
+    margin-top: 80px;
+    font-size: 36px;
+    color: #3d3d4d;
+`;

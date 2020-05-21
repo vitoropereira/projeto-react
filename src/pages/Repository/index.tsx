@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { useRouteMatch, Link } from 'react-router-dom'
 import { FiChevronsLeft, FiChevronRight } from 'react-icons/fi'
+import { FaExclamationCircle } from 'react-icons/fa'
 import api from '../../services/api'
 
 import logoImg from '../../assets/logo.svg'
 
-import { Header, RepositoryInfo, Issues } from './styles'
+import { Header, Text, RepositoryInfo, Issues } from './styles'
 
 interface RepositoryParams {
   repository: string
@@ -86,7 +87,9 @@ const Repository: React.FC = () => {
         </RepositoryInfo>
       )}
 
-
+      <Text>
+        <FaExclamationCircle /> Issues
+      </Text>
       <Issues>
         {issues.map(issue => (
           <a key={issue.id} href={issue.html_url}>

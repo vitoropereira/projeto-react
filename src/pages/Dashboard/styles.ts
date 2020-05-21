@@ -115,4 +115,11 @@ export const Repositories = styled.div`
   }
 
 `
-
+export const Text = styled.p`
+    font-size: 16px;
+    color: #a8a8b3;
+    max-width: 450px;
+    margin-left: 10px;
+    line-height: 16px;
+    margin-top: 10px;
+`;
